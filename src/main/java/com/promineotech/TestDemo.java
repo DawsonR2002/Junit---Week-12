@@ -1,5 +1,6 @@
 package com.promineotech;
 
+import java.security.SecureRandom;
 import java.util.Random;
 
 public class TestDemo {
@@ -48,7 +49,7 @@ public class TestDemo {
 	
 	int getRandomInt() {
 
-	    Random random = new Random();
+	    Random random = new SecureRandom();
 
 	    return random.nextInt(10) + 1;
 
